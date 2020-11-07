@@ -1,23 +1,24 @@
 {
-    "name": "ark-structure",
-    "version": "1.0.1",
-    "description": "Init Gulp Structure",
-    "main": "cli.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "author": "Evgeniy Plyakin",
-    "license": "ISC",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/taranse/ark-structure.git"
-    },
-    "bugs": {
-        "url": "https://github.com/taranse/ark-structure/issues"
-    },
-    "bin": {
-        "cli": "./cli.js",
-        "foo": "foobar.js"
-    },
-    "homepage": "https://github.com/taranse/ark-structure#readme"
+  "name": "ark-structure",
+  "version": "1.0.1",
+  "description": "Init Gulp Structure",
+  "main": "cli.js",
+  "scripts": {
+    "ark-structure": "node cli.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Evgeniy Plyakin",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taranse/ark-structure.git"
+  },
+  "bugs": {
+    "url": "https://github.com/taranse/ark-structure/issues"
+  },
+  "bin": {
+    "cli": "./cli.js",
+    "foo": "foobar.js"
+  },
+  "homepage": "https://github.com/taranse/ark-structure#readme"
 }
