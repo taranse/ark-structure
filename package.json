@@ -1,0 +1,11 @@
+{
+  "name": "ark-structure",
+  "version": "1.0.0",
+  "description": "Init Gulp Structure",
+  "main": "cli.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Evgeniy Plyakin",
+  "license": "ISC"
+}
