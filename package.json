@@ -1,24 +1,27 @@
 {
-  "name": "ark-structure",
+  "name": "generator-ark-structure",
   "version": "1.0.1",
   "description": "Init Gulp Structure",
   "main": "cli.js",
-  "scripts": {
-    "ark-structure": "node cli.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "Evgeniy Plyakin",
   "license": "ISC",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/taranse/ark-structure.git"
   },
+  "files": [
+    "app"
+  ],
   "bugs": {
     "url": "https://github.com/taranse/ark-structure/issues"
   },
-  "bin": {
-    "cli": "./cli.js",
-    "foo": "foobar.js"
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "yeoman-generator": "^1.0.0",
+    "yosay": "^2.0.2"
   },
   "homepage": "https://github.com/taranse/ark-structure#readme"
 }
