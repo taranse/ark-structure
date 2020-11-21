@@ -7,13 +7,13 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/taranse/ark-structure.git"
+    "url": "git+https://github.com/taranse/generator-ark-structure.git"
   },
   "files": [
     "app"
   ],
   "bugs": {
-    "url": "https://github.com/taranse/ark-structure/issues"
+    "url": "https://github.com/taranse/generator-ark-structure/issues"
   },
   "keywords": [
     "yeoman-generator"
@@ -23,5 +23,5 @@
     "yeoman-generator": "^1.0.0",
     "yosay": "^2.0.2"
   },
-  "homepage": "https://github.com/taranse/ark-structure#readme"
+  "homepage": "https://github.com/taranse/generator-ark-structure#readme"
 }
