@@ -1,0 +1,98 @@
+@mixin vw-property($data, $second: null) {
+  @if ($second) {
+    #{$second}: $data * 1px;
+
+    @include desktop() {
+      $s: ($data / 1920 * 100vw);
+      #{$second}: calc(var(--exp) * #{$data}px);
+    }
+  } @else {
+    @each $property, $size in $data {
+      #{$property}: $size * 1px;
+    }
+
+    @include desktop() {
+      @each $property, $size in $data {
+        $s: ($size / 1920 * 100vw);
+        #{$property}: calc(var(--exp) * #{$size}px);
+      }
+    }
+  }
+}
+@mixin vw-property-big($data, $second: null) {
+  @if ($second) {
+    #{$second}: $data * 1px;
+
+    @include desktop() {
+      $s: ($data / 1920 * 100vw);
+      #{$second}: $s;
+    }
+  } @else {
+    @each $property, $size in $data {
+      #{$property}: $size * 1px;
+    }
+
+    @include desktop() {
+      @each $property, $size in $data {
+        $s: ($size / 1920 * 100vw);
+        #{$property}: $s;
+      }
+    }
+  }
+}
+
+@function vh($height) {
+  @return $height / 1080 * 100vh;
+}
+
+@function vw($width) {
+  @return $width / 1920 * 100vw;
+}
+
+@mixin desktop {
+  @media (max-width: 1800px) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (max-width: 1500px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 1100px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 750px) {
+    @content;
+  }
+}
+@mixin mobile-small {
+  @media (max-width: 350px) {
+    @content;
+  }
+}
+
+@function font-size($size) {
+  @return ($size / 19) * 1rem;
+}
+
+@function line-height($lh, $size) {
+  @if ($lh) {
+    @return ($lh / $size) * 1;
+  }
+
+  @return 1.25;
+}
+
+@mixin size($size, $lh: $size * 1.25) {
+  font-size: font-size($size);
+  line-height: line-height($lh, $size);
+}
+
+$proxima: "Proxima Nova";

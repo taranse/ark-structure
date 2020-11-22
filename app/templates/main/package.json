@@ -1,0 +1,82 @@
+{
+  "name": "zima",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "dev": "node node_modules/cross-env/src/bin/cross-env.js NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "node node_modules/cross-env/src/bin/cross-env.js NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "node node_modules/cross-env/src/bin/cross-env.js NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "node node_modules/cross-env/src/bin/cross-env.js NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uponyou/zima.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uponyou/zima/issues"
+  },
+  "homepage": "https://github.com/uponyou/zima#readme",
+  "dependencies": {
+    "@babel/plugin-proposal-decorators": "^7.10.5",
+    "@babel/plugin-proposal-function-sent": "^7.10.4",
+    "@babel/plugin-proposal-throw-expressions": "^7.10.4",
+    "@babel/plugin-syntax-import-meta": "^7.10.4",
+    "animate.css": "^4.1.1",
+    "animated-scroll-to": "^2.0.12",
+    "axios": "^0.20.0",
+    "babel-preset-es2016": "^6.24.1",
+    "browser-sync": "^2.26.12",
+    "cross-env": "^7.0.2",
+    "css-vars-ponyfill": "^2.4.1",
+    "edge.js": "^1.1.4",
+    "fullpage.js": "^3.0.9",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-data": "^1.3.1",
+    "gulp-edgejs": "^0.4.1",
+    "gulp-image": "^6.2.1",
+    "gulp-load-plugins": "^2.0.4",
+    "gulp-minify": "^3.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "jquery": "^3.5.1",
+    "jquery-parallax.js": "^1.5.0",
+    "jquery-touchswipe": "^1.6.19",
+    "laravel-mix": "^5.0.5",
+    "merge-stream": "^2.0.0",
+    "onepage-scroll": "^1.3.0",
+    "parallax-js": "^3.1.0",
+    "presenter": "^0.2.0",
+    "swiper": "^6.3.3",
+    "typograf": "^6.11.2",
+    "typograph": "^1.0.15",
+    "waypoints": "^4.0.1",
+    "webpack-stream": "^6.1.0"
+  },
+  "browserslist": [
+    ">0.01%",
+    "not dead",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/preset-es2015": "^7.0.0-beta.53",
+    "@babel/preset-stage-1": "^7.0.0",
+    "@babel/traverse": "^7.1.4",
+    "babel-preset-es2015": "^6.24.1",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-inline-fonts": "^1.2.1",
+    "gulp-strip-debug": "^3.0.0",
+    "vue-template-compiler": "^2.6.12"
+  }
+}
